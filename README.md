@@ -1,1 +1,2 @@
-🔗 Demo https://soda-rotate.vercel.app/
+🔗 Link -> https://soda-rotate.vercel.app/
+
