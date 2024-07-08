@@ -2,7 +2,6 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background-image: url("background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,6 +11,7 @@
     position: absolute;
     bottom: 170px;
     width: 280px;
+    /*width: 220px;*/
     height: 500px;
     left: 50%;
     top: 30%;
@@ -27,18 +27,19 @@
     transition: 3s;
     background:
             var(--url) var(--left) 0,
-            url("soda-min.png");
+            url("assets/soda-min.png");
     background-size: auto 100%;
     width: 280px;
     aspect-ratio: 2 / 4.11;
     background-blend-mode: multiply;
-    mask-image: url("soda-min.png");
+    mask-image: url('assets/soda-min.png');
     mask-size: auto 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/*.banner .product.hovered {*/
 .banner .product:hover {
     --left: -1000px;
     transform: translateX(-50%) translateY(-40%) rotateZ(360deg);
@@ -48,6 +49,7 @@
     opacity: 0;
 }
 
+/*.banner .product.hovered .soda:nth-child(2) {*/
 .banner .product:hover .soda:nth-child(2) {
     opacity: 1;
 }
@@ -73,7 +75,8 @@
     bottom: -30px;
 }
 
-.banner:has(.product:hover) .rock img {
+/*.banner .product.hovered .rock img {*/
+.banner:has(product:hover) .rock img {
     transform: translateX(-50%) translateY(50px);
 }
 

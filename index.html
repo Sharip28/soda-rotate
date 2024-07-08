@@ -5,24 +5,32 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Soda mock</title>
+    <title>Soda rotate</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loader.css">
 </head>
 <body style="padding: 0; margin: 0">
-    <div class="banner">
+<div class="loader-overlay">
+    <div class="loader">
+        <div class="spinner"></div>
+        <span class="loader-text">Loading files...</span>
+    </div>
+</div>
+    <div class="banner" style="background-image: url('assets/background.jpg')">
         <div class="product">
             <div
-                style="--url: url('red_image.png')"
+                style="--url: url('assets/red_image.png');"
                 class="soda">
             </div>
             <div
-                style="--url: url('yellow_image.png')"
+                style="--url: url('assets/yellow_image.png');"
                 class="soda">
             </div>
         </div>
         <div class="rock">
-            <img src="rock1.png" alt="rock">
+            <img src="assets/rock1.png" alt="rock">
         </div>
     </div>
+<script src="index.js"></script>
 </body>
 </html>
