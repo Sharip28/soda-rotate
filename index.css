@@ -1,0 +1,80 @@
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .product {
+    position: absolute;
+    bottom: 170px;
+    width: 280px;
+    height: 500px;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%) translateY(-30%);
+    z-index: 1;
+    --left: 0px;
+    display: flex;
+    gap: 10px;
+    transition: 1s;
+}
+
+.banner .product .soda {
+    transition: 3s;
+    background:
+            var(--url) var(--left) 0,
+            url("soda.png");
+    background-size: auto 100%;
+    width: 280px;
+    aspect-ratio: 2 / 4.11;
+    background-blend-mode: multiply;
+    mask-image: url("soda.png");
+    mask-size: auto 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner .product:hover {
+    --left: -1000px;
+    transform: translateX(-50%) translateY(-40%) rotateZ(360deg);
+}
+
+.banner .product .soda:nth-child(2) {
+    opacity: 0;
+}
+
+.banner .product:hover .soda:nth-child(2) {
+    opacity: 1;
+}
+
+
+.banner .rock {
+    position: absolute;
+    inset: 0 0 0 0;
+    pointer-events: none;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%) translateY(-70%);
+}
+
+.banner .rock img {
+    position: absolute;
+    transition: 1s;
+    height: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+.banner:has(.product:hover) .rock img {
+    transform: translateX(-50%) translateY(50px);
+}
+
+
