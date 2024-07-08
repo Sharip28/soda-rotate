@@ -27,12 +27,12 @@
     transition: 3s;
     background:
             var(--url) var(--left) 0,
-            url("soda.png");
+            url("soda-min.png");
     background-size: auto 100%;
     width: 280px;
     aspect-ratio: 2 / 4.11;
     background-blend-mode: multiply;
-    mask-image: url("soda.png");
+    mask-image: url("soda-min.png");
     mask-size: auto 100%;
     position: absolute;
     left: 50%;
