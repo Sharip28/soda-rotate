@@ -23,25 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
       loaderOverlay.style.display = 'none';
     }
   }
-
-
-  // const product = document.querySelector('.product');
-  // let hoverLocked = false;
-  //
-  // product.addEventListener('mouseenter', () => {
-  //   if (!hoverLocked) {
-  //     hoverLocked = true;
-  //     product.classList.add('hovered');
-  //   }
-  // });
-  //
-  // product.addEventListener('mouseleave', () => {
-  //   if (hoverLocked) {
-  //     // Wait for the hover effect to complete
-  //     setTimeout(() => {
-  //       product.classList.remove('hovered');
-  //       hoverLocked = false;
-  //     }, 500); // Match the transition duration
-  //   }
-  // });
 });
